@@ -2,7 +2,7 @@
   "name": "workbench"
   "description": "[WIP] Local development tool for PHP"
   "homepage": "https://github.com/ghostwriter/workbench"
-  "topics": "ghostwriter, wip, workbench"
+  "topics": "dev, ghostwriter, wip, workbench"
   "private": false
   "has_issues": true
   "has_projects": false
