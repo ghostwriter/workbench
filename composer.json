@@ -1,11 +1,12 @@
 {
-    "name": "ghostwriter/wip",
-    "description": "Here be dragons",
+    "name": "ghostwriter/workbench",
+    "description": "Local development tool for PHP",
     "license": "BSD-4-Clause",
-    "type": "library",
+    "type": "composer-plugin",
     "keywords": [
         "ghostwriter",
-        "wip"
+        "workbench",
+        "dev"
     ],
     "authors": [
         {
@@ -15,12 +16,12 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/ghostwriter/wip",
+    "homepage": "https://github.com/ghostwriter/workbench",
     "support": {
-        "issues": "https://github.com/ghostwriter/wip/issues",
-        "source": "https://github.com/ghostwriter/wip",
-        "rss": "https://github.com/ghostwriter/wip/releases.atom",
-        "security": "https://github.com/ghostwriter/wip/security/advisories/new"
+        "issues": "https://github.com/ghostwriter/workbench/issues",
+        "source": "https://github.com/ghostwriter/workbench",
+        "rss": "https://github.com/ghostwriter/workbench/releases.atom",
+        "security": "https://github.com/ghostwriter/workbench/security/advisories/new"
     },
     "funding": [
         {
@@ -36,6 +37,7 @@
     ],
     "require": {
         "php": "~8.4.0",
+        "ext-mbstring": "*",
         "ghostwriter/case-converter": "~2.1.0",
         "ghostwriter/clock": "~3.0.1",
         "ghostwriter/collection": "~2.0.0",
@@ -43,33 +45,33 @@
         "ghostwriter/container": "~5.0.1",
         "ghostwriter/event-dispatcher": "~5.0.3",
         "ghostwriter/filesystem": "~0.1.1",
-        "ghostwriter/http": "@dev",
         "ghostwriter/json": "~3.0.0",
-        "ghostwriter/option": "~2.0.0",
-        "ghostwriter/result": "~2.0.0",
         "ghostwriter/shell": "~0.1.0",
-        "ghostwriter/uuid": "~1.0.3"
+        "ghostwriter/uuid": "~1.0.3",
+        "nikic/php-parser": "~5.6.0",
+        "sebastian/diff": "~7.0.0"
     },
     "require-dev": {
         "ext-xdebug": "*",
+        "composer-plugin-api": "~2.6.0",
+        "composer-runtime-api": "~2.2.2",
+        "composer/composer": "~2.8.10",
+        "composer/semver": "~3.4.3",
         "ghostwriter/coding-standard": "dev-main",
-        "ghostwriter/psr-phpunit-assertions": "@dev",
-        "infection/infection": "~0.31.1",
         "mockery/mockery": "~1.6.12",
         "phpunit/phpunit": "~12.3.2",
         "symfony/var-dumper": "~7.3.2",
         "vimeo/psalm": "~6.13.1"
     },
+    "conflict": {
+        "pestphp/pest": "*"
+    },
     "minimum-stability": "stable",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Ghostwriter\\Wip\\": "src"
-        },
-        "files": [
-            "src/constants.php",
-            "src/functions.php"
-        ]
+            "Ghostwriter\\Workbench\\": "src"
+        }
     },
     "autoload-dev": {
         "psr-4": {
@@ -83,13 +85,12 @@
         ]
     },
     "bin": [
-        "bin/console",
-        "bin/console.php"
+        "bin/workbench",
+        "bin/workbench.php"
     ],
     "config": {
         "allow-plugins": {
-            "ghostwriter/coding-standard": true,
-            "infection/extension-installer": true
+            "ghostwriter/coding-standard": true
         },
         "bump-after-update": false,
         "classmap-authoritative": false,
@@ -105,7 +106,19 @@
         "sort-packages": true,
         "use-parent-dir": false
     },
+    "extra": {
+        "class": "Ghostwriter\\Workbench\\Service\\Composer\\Plugin",
+        "plugin-modifies-downloads": false,
+        "plugin-modifies-install-path": false,
+        "plugin-optional": false
+    },
     "scripts": {
+        "post-install-cmd": [
+            "php bin/workbench discover"
+        ],
+        "post-update-cmd": [
+            "php bin/workbench discover"
+        ],
         "bin_composer": "vendor/ghostwriter/coding-standard/tools/composer",
         "bin_ecs": "ecs check --clear-cache --no-interaction",
         "bin_infection": "vendor/ghostwriter/coding-standard/tools/infection --ansi --min-covered-msi=0 --min-msi=0 --show-mutations --threads=max",
