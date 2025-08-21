@@ -4093,18 +4093,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/coding-standard.git",
-                "reference": "a6cd1f0dc8b2525f89e524cedf1de90fcfa75d78"
+                "reference": "61f5823dd30fdffd79e6f5fdf5d4dbcf514d5697"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/coding-standard/zipball/a6cd1f0dc8b2525f89e524cedf1de90fcfa75d78",
-                "reference": "a6cd1f0dc8b2525f89e524cedf1de90fcfa75d78",
+                "url": "https://api.github.com/repos/ghostwriter/coding-standard/zipball/61f5823dd30fdffd79e6f5fdf5d4dbcf514d5697",
+                "reference": "61f5823dd30fdffd79e6f5fdf5d4dbcf514d5697",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "~2.6.0",
                 "composer-runtime-api": "~2.2.2",
-                "composer/composer": "~2.8.10",
+                "composer/composer": "~2.8.11",
                 "composer/semver": "~3.4.4",
                 "ext-ctype": "*",
                 "ext-curl": "*",
@@ -4247,7 +4247,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-21T08:01:44+00:00"
+            "time": "2025-08-21T10:55:05+00:00"
         },
         {
             "name": "ghostwriter/option",
