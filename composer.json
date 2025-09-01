@@ -125,7 +125,6 @@
             "@normalize",
             "@test"
         ],
-        "composer-normalize": "@bin_normalize --no-cache --diff --no-check-lock --no-scripts --no-plugins",
         "docker": [
             "@docker:build",
             "@docker:run"
@@ -138,10 +137,6 @@
             "vendor/ghostwriter/coding-standard/tools/phar/infection --min-covered-msi=0 --min-msi=0 --show-mutations --threads=max"
         ],
         "normalize": "vendor/ghostwriter/coding-standard/tools/phar/composer-normalize --no-cache --diff --no-check-lock --no-scripts --no-plugins",
-        "phive": [
-            "@bin_phive update --force-accept-unsigned",
-            "@bin_phive purge"
-        ],
         "phpunit": [
             "@xdebug",
             "vendor/ghostwriter/coding-standard/tools/phar/phpunit --do-not-cache-result --colors=always"
@@ -150,13 +145,6 @@
             "@xdebug",
             "@bin_phpunit --migrate-configuration"
         ],
-        "psalm": "@bin_psalm --show-info=true --no-diff --shepherd --stats",
-        "psalm:alter": "@bin_psalm --alter --allow-backwards-incompatible-changes=false --safe-types",
-        "psalm:baseline": "@bin_psalm --no-diff --set-baseline=psalm-baseline.xml",
-        "psalm:dry-run": "@bin_psalm --alter --issues=all --dry-run",
-        "psalm:fix": "@bin_psalm --alter --issues=UnnecessaryVarAnnotation",
-        "psalm:security": "@bin_psalm --no-diff --taint-analysis",
-        "psalm:update": "@bin_psalm --no-diff --update-baseline=psalm-baseline.xml",
         "test": [
             "@phpunit",
             "@infection"
