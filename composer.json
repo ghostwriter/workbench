@@ -38,7 +38,7 @@
     "require": {
         "php": "~8.4.0 || ~8.5.0",
         "ext-mbstring": "*",
-        "composer-plugin-api": "~2.6.0",
+        "composer-plugin-api": "~2.9.0",
         "composer-runtime-api": "~2.2.2",
         "composer/composer": "^2.9.1",
         "composer/semver": "^3.4.4",
@@ -107,7 +107,11 @@
         "class": "Ghostwriter\\Workbench\\Service\\Composer\\Plugin",
         "plugin-modifies-downloads": false,
         "plugin-modifies-install-path": false,
-        "plugin-optional": false
+        "plugin-optional": false,
+        "thanks": {
+            "url": "https://github.com/ghostwriter/workbench",
+            "name": "ghostwriter/workbench"
+        }
     },
     "scripts": {
         "post-install-cmd": ["php bin/workbench discover"],
