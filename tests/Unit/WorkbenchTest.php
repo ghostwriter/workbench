@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Tests\Unit;
 
 use Generator;
-use Ghostwriter\Wip\Foo;
-use Ghostwriter\Wip\Interface\FooInterface;
+use Ghostwriter\Workbench\Workbench;
+use Ghostwriter\Workbench\Interface\WorkbenchInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
@@ -14,8 +14,8 @@ use Throwable;
 
 use function is_a;
 
-#[CoversClass(Foo::class)]
-final class FooTest extends TestCase
+#[CoversClass(Workbench::class)]
+final class WorkbenchTest extends AbstractTestCase
 {
     /**
      * @throws Throwable
@@ -25,7 +25,7 @@ final class FooTest extends TestCase
     {
         self::assertSame($value, $value);
 
-        self::assertTrue(Foo::new()->test());
+        self::assertTrue(Workbench::new()->test());
     }
 
     /**
@@ -33,7 +33,7 @@ final class FooTest extends TestCase
      */
     public function testImplementsInterface(): void
     {
-        self::assertTrue(is_a(Foo::class, FooInterface::class, true));
+        self::assertTrue(is_a(Workbench::class, WorkbenchInterface::class, true));
     }
 
     /**

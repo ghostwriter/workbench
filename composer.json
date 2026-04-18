@@ -46,6 +46,7 @@
         "ghostwriter/clock": "^3.0.1",
         "ghostwriter/collection": "^2.1.0",
         "ghostwriter/config": "^2.1.1",
+        "ghostwriter/console": "^0.2.1",
         "ghostwriter/container": "^6.1.1",
         "ghostwriter/event-dispatcher": "^6.1.0",
         "ghostwriter/filesystem": "^0.2.0",
@@ -104,7 +105,12 @@
         "use-parent-dir": false
     },
     "extra": {
-        "class": "Ghostwriter\\Workbench\\Service\\Composer\\Plugin",
+        "class": "Ghostwriter\\Workbench\\Composer\\Plugin",
+        "ghostwriter": {
+            "container": {
+                "provider": ["Ghostwriter\\Workbench\\Container\\WorkbenchProvider"]
+            }
+        },
         "plugin-modifies-downloads": false,
         "plugin-modifies-install-path": false,
         "plugin-optional": false,

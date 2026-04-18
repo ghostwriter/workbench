@@ -7,6 +7,8 @@ namespace Ghostwriter\Workbench\Console;
 
 use ErrorException;
 use Ghostwriter\Container\Container;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Throwable;
 
@@ -43,7 +45,7 @@ use function sprintf;
          */
         $application = $container->get(Application::class);
 
-        $exitCode = $application->run($_SERVER['argv'] ?? []);
+        $exitCode = $application->run(new ArgvInput($_SERVER['argv'] ?? []));
     } catch (Throwable $throwable) {
         $output = $container->get(OutputInterface::class);
 
@@ -59,8 +61,8 @@ use function sprintf;
     } finally {
         restore_error_handler();
 
-        exit($exitCode);
     }
+        exit($exitCode);
 })(
     $_composer_autoload_path
         ?? implode(DIRECTORY_SEPARATOR, [dirname(__DIR__), 'vendor', 'autoload.php'])

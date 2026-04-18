@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Workbench\Service\Composer;
+namespace Ghostwriter\Workbench\Composer;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;

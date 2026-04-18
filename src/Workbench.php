@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Wip;
+namespace Ghostwriter\Workbench;
 
-use Ghostwriter\Wip\Interface\FooInterface;
+use Ghostwriter\Workbench\Interface\WorkbenchInterface;
 
 /** @see FooTest */
-final class Foo implements FooInterface
+final class Workbench implements WorkbenchInterface
 {
     public function __construct() {}
 

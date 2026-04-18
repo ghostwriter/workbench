@@ -4,6 +4,4 @@ declare(strict_types=1);
 
 namespace Ghostwriter\Workbench\Interface;
 
-use Throwable;
-
-interface ExceptionInterface extends Throwable {}
+interface WorkbenchInterface {}

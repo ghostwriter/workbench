@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Exception;
 
-use Ghostwriter\Wip\Exception\ShouldNotHappenException;
-use Ghostwriter\Wip\Interface\ExceptionInterface;
+use Ghostwriter\Workbench\Exception\ShouldNotHappenException;
+use Ghostwriter\Workbench\Interface\ExceptionInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use Throwable;
