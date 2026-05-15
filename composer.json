@@ -49,7 +49,7 @@
         "ghostwriter/shell": "^0.1.5",
         "ghostwriter/uuid": "^1.0.3",
         "nikic/php-parser": "^5.7.0",
-        "sebastian/diff": "^8.2.1"
+        "sebastian/diff": "^8.3.0"
     },
     "require-dev": {
         "ext-xdebug": "*",
