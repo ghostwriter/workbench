@@ -1,14 +1,18 @@
 "milestones":
-  - "title": "0.1.0"
-    "description": "Minor release – targeting 0.1.x branch (semantic version: 0.1.0)"
-    "state": "open"
   - "title": "1.0.0"
     "description": "Major release – targeting 1.0.x branch (semantic version: 1.0.0)"
+    "state": "open"
+  - "title": "0.1.0"
+    "description": "Minor release – targeting 0.1.x branch (semantic version: 0.1.0)"
     "state": "open"
 "repository":
   "name": "workbench"
   "description": "[WIP] Local development tool for PHP"
-  "topics": "dev, ghostwriter, wip, workbench"
+  "topics":
+    - "ghostwriter"
+    - "workbench"
+    - "php"
+    - "dev"
   "homepage": "https://github.com/ghostwriter/workbench"
   "default_branch": "0.1.x"
   "allow_auto_merge": true
