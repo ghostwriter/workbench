@@ -8,11 +8,7 @@
 "repository":
   "name": "workbench"
   "description": "[WIP] Local development tool for PHP"
-  "topics":
-    - "ghostwriter"
-    - "workbench"
-    - "php"
-    - "dev"
+  "topics": "ghostwriter, workbench, php, dev"
   "homepage": "https://github.com/ghostwriter/workbench"
   "default_branch": "0.1.x"
   "allow_auto_merge": true
