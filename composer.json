@@ -58,7 +58,7 @@
         "ghostwriter/json": "^3.0.3",
         "ghostwriter/shell": "^0.1.6",
         "ghostwriter/uuid": "^1.0.3",
-        "nikic/php-parser": "^5.7.0",
+        "nikic/php-parser": "^5.8.0",
         "sebastian/diff": "^8.3.0"
     },
     "require-dev": {
