@@ -31,7 +31,7 @@ if (\is_dir($autoloadPath)) {
             $path = $autoloadPath . \DIRECTORY_SEPARATOR . \implode(\DIRECTORY_SEPARATOR, $parts) . '.php';
 
             if (\is_file($path)) {
-                require $path;
+                require_once $path;
 
                 break;
             }
@@ -52,7 +52,7 @@ if (\is_dir($requirePath)) {
     $regexIterator = new \RegexIterator($recursiveIteratorIterator, '#^.+\.php$#iu');
 
     foreach ($regexIterator as $fileInfo) {
-        require $fileInfo->getPathname();
+        require_once $fileInfo->getPathname();
     }
 }
 
