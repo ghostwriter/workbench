@@ -1444,29 +1444,40 @@
         },
         {
             "name": "ghostwriter/uuid",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/uuid.git",
-                "reference": "3e34ec75ee18aa4a7cf9b20bc821dc572d1209b9"
+                "reference": "5345ee34c3c054b7fc598c977ebfd804e1998cfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/uuid/zipball/3e34ec75ee18aa4a7cf9b20bc821dc572d1209b9",
-                "reference": "3e34ec75ee18aa4a7cf9b20bc821dc572d1209b9",
+                "url": "https://api.github.com/repos/ghostwriter/uuid/zipball/5345ee34c3c054b7fc598c977ebfd804e1998cfd",
+                "reference": "5345ee34c3c054b7fc598c977ebfd804e1998cfd",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": "^8.4"
+                "php": "~8.4.0 || ~8.5.0 || ~8.6.0"
             },
             "require-dev": {
-                "ghostwriter/coding-standard": "dev-main"
+                "boundwize/structarmed": "^0.18.5",
+                "ext-xdebug": "*",
+                "ghostwriter/coding-standard": "dev-main",
+                "ghostwriter/phpunit-assertions": "^0.1.1",
+                "mockery/mockery": "^1.6.15",
+                "phpunit/phpunit": "^13.3.6"
             },
             "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/ghostwriter/uuid",
+                    "name": "ghostwriter/uuid"
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "Ghostwriter\\Uuid\\": "src"
+                    "Ghostwriter\\Uuid\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1498,9 +1509,13 @@
                 {
                     "url": "https://github.com/sponsors/ghostwriter",
                     "type": "github"
+                },
+                {
+                    "url": "https://paypal.me/codepoet",
+                    "type": "paypal"
                 }
             ],
-            "time": "2025-03-17T20:27:11+00:00"
+            "time": "2026-10-01T02:33:59+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
