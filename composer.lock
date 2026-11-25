@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4700f4318e6502316668b5242d0112e5",
+    "content-hash": "61847aa3bfc58e9dc5ec3e340b48994b",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1715,7 +1715,8 @@
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.9.0"
             },
-            "time": "2026-09-13T18:51:52+00:00"
+            "time": "2026-09-13T18:51:52+00:00",
+            "published-time": "2026-09-13T18:53:16+00:00"
         },
         {
             "name": "psr/clock",
@@ -3524,20 +3525,21 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-10T08:53:11+00:00"
+            "time": "2026-10-10T08:53:11+00:00",
+            "published-time": "2026-10-10T08:54:08+00:00"
         },
         {
             "name": "boundwize/structarmed",
-            "version": "0.19.4",
+            "version": "0.22.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/boundwize/structarmed.git",
-                "reference": "5188c4c4a790e9237a90491b0596d4669b9944e2"
+                "reference": "19505bb00c2624a7406de9b1b94c399c09d69d70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/boundwize/structarmed/zipball/5188c4c4a790e9237a90491b0596d4669b9944e2",
-                "reference": "5188c4c4a790e9237a90491b0596d4669b9944e2",
+                "url": "https://api.github.com/repos/boundwize/structarmed/zipball/19505bb00c2624a7406de9b1b94c399c09d69d70",
+                "reference": "19505bb00c2624a7406de9b1b94c399c09d69d70",
                 "shasum": ""
             },
             "require": {
@@ -3594,7 +3596,7 @@
             ],
             "support": {
                 "issues": "https://github.com/boundwize/structarmed/issues",
-                "source": "https://github.com/boundwize/structarmed/tree/0.19.4"
+                "source": "https://github.com/boundwize/structarmed/tree/0.22.11"
             },
             "funding": [
                 {
@@ -3602,7 +3604,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-11T11:18:52+00:00"
+            "time": "2026-11-25T16:19:43+00:00",
+            "published-time": "2026-11-25T16:20:13+00:00"
         },
         {
             "name": "fidry/cpu-core-counter",
@@ -3664,7 +3667,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-29T22:11:39+00:00"
+            "time": "2026-09-29T22:11:39+00:00",
+            "published-time": "2026-09-29T22:12:43+00:00"
         },
         {
             "name": "ghostwriter/coding-standard",
